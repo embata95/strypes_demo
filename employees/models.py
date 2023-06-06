@@ -8,5 +8,5 @@ class Employee(models.Model):
     # Set as Charfield in order to support leading zero or country code.
     mobile_number = models.CharField(max_length=20)
     start_date = models.DateField()
-    salary = models.CharField(max_length=20)
+    salary = models.CharField(max_length=20, help_text="Salary with currency.")
     employee_id = models.CharField(max_length=20, unique=True)
