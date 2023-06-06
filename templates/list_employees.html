@@ -13,6 +13,7 @@
                 <th>Last Name</th>
                 <th>Mobile</th>
                 <th>Start Date</th>
+                <th>Position</th>
                 <th>Salary</th>
                 <th>Employee ID</th>
             </tr>
@@ -24,6 +25,7 @@
                     <td>{{ employee.last_name }}</td>
                     <td>{{ employee.mobile_number }}</td>
                     <td>{{ employee.start_date.strftime("%d/%m/%Y") }}</td>
+                    <td>{{ employee.get_position_display() }}</td>
                     <td>{{ employee.salary }}</td>
                     <td>{{ employee.employee_id }}</td>
                 </tr>

@@ -14,6 +14,7 @@ class EmployeeViewTest(APITestCase):
             "last_name": "Doe",
             "mobile_number": "0881234567",
             "start_date": datetime.date.today(),
+            "position": Employee.POSITION_JUNIOR_DEVELOPER,
             "salary": "EUR 1",
             "employee_id": "ID 1",
         }
@@ -33,6 +34,7 @@ class EmployeeViewTest(APITestCase):
                 "last_name": "Name",
                 "mobile_number": "0881234567",
                 "start_date": datetime.date.today(),
+                "position": Employee.POSITION_JUNIOR_DEVELOPER,
                 "salary": "EUR 1",
                 "employee_id": "ID 1",
             },
